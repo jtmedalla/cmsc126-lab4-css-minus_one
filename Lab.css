@@ -42,7 +42,7 @@ body {
   border-radius: 10px;
   border-radius: 50%;
   border-radius: 10px 10px 10px 10px;
-  text-align: left;
+  text-align: center;
   font-weight: 600;
 }
 
@@ -51,7 +51,10 @@ body {
   text-decoration: none;
   background-color: #f8c79f;
   padding: 10px;
-  margin: 6px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 1%;
+  margin-right: 1%;
   font-size: 25px;
   border-radius: 50%;
   border-radius: 10px 10px 10px 10px;
