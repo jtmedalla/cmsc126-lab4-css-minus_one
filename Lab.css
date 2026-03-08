@@ -94,7 +94,7 @@ body.order .navBar a[href*="order.html"] {
   font-weight: bold;
 }
 
-#banner {
+#banner[src*="Images/CoffeeBanner.jpg"] {
   height: 150px;
   margin-bottom: 15px;
   object-fit: cover;
