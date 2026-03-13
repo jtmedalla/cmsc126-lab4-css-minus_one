@@ -96,6 +96,7 @@ body.order .navBar a[href*="order.html"] {
 
 body > img.imgBanner {
   height: 150px;
+  object-fit: cover;
   width: 100%;
 }
 
