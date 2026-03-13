@@ -94,9 +94,7 @@ body.order .navBar a[href*="order.html"] {
   font-weight: bold;
 }
 
-body > img.imgBanner {
-  display: block;
-  width: 100%;
+#banner[src*="Images/CoffeeBanner.jpg"] {
   height: 150px;
   margin: auto;
 }
@@ -106,8 +104,7 @@ body > img.imgBanner {
   
 }
 
-a[href*="#bottomPage"],
-a[href*="#title"] {
+#banner + a[href*="#bottomPage"], .coffee > a[href*="#title"] {
   background-color: #f8c79f;
   border-radius: 10px 10px 10px 10px;
   color: inherit;
@@ -135,7 +132,7 @@ body > div {
 
 .coffee > h2 {
   background-color: inherit;
-  font-family: "Englebert";
+  font-family: 'Englebert';
   text-align: center;
 }
 .coffee {
@@ -254,5 +251,3 @@ body > div {
 footer {
   text-align: center;
 }
-
-
