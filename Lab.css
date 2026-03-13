@@ -94,17 +94,17 @@ body.order .navBar a[href*="order.html"] {
   font-weight: bold;
 }
 
-#banner[src*="Images/CoffeeBanner.jpg"] {
+body > img.imgBanner {
   height: 150px;
-  margin: auto;
+  width: 100%;
 }
 
 .coffee > img.imgBanner {
   align-content: center;
-  
 }
 
-#banner + a[href*="#bottomPage"], .coffee > a[href*="#title"] {
+a[href*="#bottomPage"],
+.coffee > a[href*="#title"] {
   background-color: #f8c79f;
   border-radius: 10px 10px 10px 10px;
   color: inherit;
@@ -132,7 +132,7 @@ body > div {
 
 .coffee > h2 {
   background-color: inherit;
-  font-family: 'Englebert';
+  font-family: "Englebert";
   text-align: center;
 }
 .coffee {
@@ -142,7 +142,6 @@ body > div {
 }
 .coffee > ol {
   background-color: #f8c79f;
-  
 }
 
 .coffee table {
