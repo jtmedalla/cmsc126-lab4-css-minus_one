@@ -228,6 +228,15 @@ body>div {
     padding: 15px 30px;
 }
 
+.coffee>ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
 .coffee>img[alt*="Cup Of Coffee"] {
     display: block;
     margin: auto;
