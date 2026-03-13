@@ -104,7 +104,7 @@ body > img.imgBanner {
 }
 
 a[href*="#bottomPage"],
-.coffee > a[href*="#title"] {
+a[href*="#title"] {
   background-color: #f8c79f;
   border-radius: 10px 10px 10px 10px;
   color: inherit;
