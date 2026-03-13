@@ -33,13 +33,13 @@ Focus on applying proper CSS techniques such as:
 /* Playfair Display */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 /* Englebert */
-@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Englebert&display=swap");
 /* Fira Mono */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 /* Fredoka */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 /* Lexend */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 body {
   background-color: #fff2d7;
@@ -47,7 +47,7 @@ body {
 }
 
 #welcome {
-  font-family: 'Fredoka';
+  font-family: "Fredoka";
   text-align: center;
 }
 
@@ -70,7 +70,7 @@ body {
   margin-left: 1%;
   margin-right: 1%;
   font-size: 25px;
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   border-radius: 10px 10px 10px 10px;
 }
 .navigation:hover {
@@ -94,20 +94,24 @@ body.order .navBar a[href*="order.html"] {
   font-weight: bold;
 }
 
-#banner[src*="Images/CoffeeBanner.jpg"] {
+body > img.imgBanner {
   height: 150px;
-  margin-bottom: 15px;
-  object-fit: cover;
   width: 100%;
 }
 
-#banner + a[href*="#bottomPage"], a[href*="#title"] {
+.coffee > img.imgBanner {
+  align-content: center;
+}
+
+a[href*="#bottomPage"],
+.coffee > a[href*="#title"] {
   background-color: #f8c79f;
   border-radius: 10px 10px 10px 10px;
   color: inherit;
   display: block;
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   font-size: 18px;
+  font-weight: 700;
   margin-left: auto;
   padding: 5px;
   position: center;
@@ -116,28 +120,101 @@ body.order .navBar a[href*="order.html"] {
 }
 
 #title {
-  font-family: 'Englebert';
+  font-family: "Englebert";
   text-align: center;
 }
 
 body > div {
-  font-family: 'Fredoka';
+  font-family: "Fredoka";
   padding: 5px;
   text-align: justify;
 }
 
 .coffee > h2 {
   background-color: inherit;
-  font-family: 'Englebert';
-  font-size: xx-large;
+  font-family: "Englebert";
   text-align: center;
 }
-
-.coffee > ol,  .definition{
-  background-color: #f9f8f6;
-  padding: 15px 30px;
+.coffee {
+  display: block;
+  margin: auto;
+  padding: auto;
+}
+.coffee > ol {
+  background-color: #f8c79f;
 }
 
+.coffee table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+}
+.coffee table h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.coffee .teamMember {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.coffee > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+#tagline {
+  background-color: #f8c79f;
+  font-family: "Fira Mono";
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 30px;
+}
+.coffee .coffeeImg {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.coffee td.label {
+  text-align: center;
+  font-family: "Fredoka";
+  font-size: 16px;
+  padding-top: 8px;
+}
+.coffee table tr:first-of-type td {
+  vertical-align: center;
+}
+
+.definition {
+  background-color: #f8c79f;
+  font-family: "Fira Mono";
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+#about {
+  background-color: #f8c79f;
+  font-family: "Fira Mono";
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 30px;
+}
 .coffee > img[alt*="Cup Of Coffee"] {
   display: block;
   margin: auto;
@@ -153,7 +230,7 @@ body > div {
   border: none;
   border-radius: 10px 10px 10px 10px;
   display: block;
-  font-family: 'Lexend';
+  font-family: "Lexend";
   font-size: 24px;
   font-weight: 900;
   margin: auto;
@@ -162,124 +239,14 @@ body > div {
   padding: 10px 30%;
 }
 
+.coffee form {
+  background-color: #f8c79f;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
 footer {
   text-align: center;
 }
-
-
-/* Josef changes - Order page */
-.order > .coffee {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.coffee > h2 {
-    order: 1;
-    margin-bottom: 0;
-}
-
-.coffee > #tagline {
-    order: 2;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
-.coffee > #coffee_choices {
-    order: 3;
-}
-
-#tagline {
-    font-family: 'Englebert';
-    font-size: large;
-    background-color: #ebc4a1;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.coffeeTitle{
-    font-family: 'Englebert';
-    font-weight: bold;
-    font-size: x-large;
-    text-transform: uppercase;
-    padding-top: 30px;
-}
-
-#coffee_choices{
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 15px;
-    table-layout: auto;
-}
-
-.coffeeImg {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
-    background-color: #ebc4a1;
-    border-radius: 8px;
-}
-
-tr > .label {
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #764827;
-    vertical-align: top;
-}
-
-.coffee:has(form) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    background-color: #fdf5e6;
-    border: 2px solid #d4a373;
-    padding: 40px;
-    border-radius: 15px;
-    max-width: 500px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-}
-
-form {
-    width: 100%;
-    max-width: 400px;
-    color: #6f4e37;
-}
-
-input[type="text"],
-input[type="email"],
-select{
-    width: 100%;
-    padding: 9px;
-    border: 1px solid #d4a373;
-    border-radius: 8px;
-    box-sizing: border-box; 
-    background-color: #fff;
-}
-
-input[type="submit"] {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #6f4e37;
-    color: white;
-    padding: 5px;
-    border: none;
-    border-radius: 8px;
-    font-size: large;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #4a3728;
-}
-
-
