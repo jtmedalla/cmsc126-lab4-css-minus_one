@@ -33,13 +33,13 @@ Focus on applying proper CSS techniques such as:
 /* Playfair Display */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 /* Englebert */
-@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Englebert&display=swap");
 /* Fira Mono */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 /* Fredoka */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 /* Lexend */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 body {
   background-color: #fff2d7;
@@ -47,7 +47,7 @@ body {
 }
 
 #welcome {
-  font-family: 'Fredoka';
+  font-family: "Fredoka";
   text-align: center;
 }
 
@@ -70,7 +70,7 @@ body {
   margin-left: 1%;
   margin-right: 1%;
   font-size: 25px;
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   border-radius: 10px 10px 10px 10px;
 }
 .navigation:hover {
@@ -94,20 +94,27 @@ body.order .navBar a[href*="order.html"] {
   font-weight: bold;
 }
 
-#banner {
-  height: 150px;
-  margin-bottom: 15px;
-  object-fit: cover;
+body > img.imgBanner {
+  display: block;
   width: 100%;
+  height: 150px;
+  margin: auto;
 }
 
-#banner + a[href*="#bottomPage"], .coffee > a[href*="#title"] {
+.coffee > img.imgBanner {
+  align-content: center;
+  
+}
+
+a[href*="#bottomPage"],
+a[href*="#title"] {
   background-color: #f8c79f;
   border-radius: 10px 10px 10px 10px;
   color: inherit;
   display: block;
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   font-size: 18px;
+  font-weight: 700;
   margin-left: auto;
   padding: 5px;
   position: center;
@@ -116,27 +123,102 @@ body.order .navBar a[href*="order.html"] {
 }
 
 #title {
-  font-family: 'Englebert';
+  font-family: "Englebert";
   text-align: center;
 }
 
 body > div {
-  font-family: 'Fredoka';
+  font-family: "Fredoka";
   padding: 5px;
   text-align: justify;
 }
 
 .coffee > h2 {
   background-color: inherit;
-  font-family: 'Englebert';
+  font-family: "Englebert";
   text-align: center;
 }
-
-.coffee > ol,  .definition{
-  background-color: #f9f8f6;
-  padding: 15px 30px;
+.coffee {
+  display: block;
+  margin: auto;
+  padding: auto;
+}
+.coffee > ol {
+  background-color: #f8c79f;
+  
 }
 
+.coffee table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+}
+.coffee table h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.coffee .teamMember {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.coffee > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+#tagline {
+  background-color: #f8c79f;
+  font-family: "Fira Mono";
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 30px;
+}
+.coffee .coffeeImg {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.coffee td.label {
+  text-align: center;
+  font-family: "Fredoka";
+  font-size: 16px;
+  padding-top: 8px;
+}
+.coffee table tr:first-of-type td {
+  vertical-align: center;
+}
+
+.definition {
+  background-color: #f8c79f;
+  font-family: "Fira Mono";
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+#about {
+  background-color: #f8c79f;
+  font-family: "Fira Mono";
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 30px;
+}
 .coffee > img[alt*="Cup Of Coffee"] {
   display: block;
   margin: auto;
@@ -152,7 +234,7 @@ body > div {
   border: none;
   border-radius: 10px 10px 10px 10px;
   display: block;
-  font-family: 'Lexend';
+  font-family: "Lexend";
   font-size: 24px;
   font-weight: 900;
   margin: auto;
@@ -161,6 +243,16 @@ body > div {
   padding: 10px 30%;
 }
 
+.coffee form {
+  background-color: #f8c79f;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
 footer {
   text-align: center;
 }
+
+
